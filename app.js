@@ -75,7 +75,7 @@ function displayFriends() {
                 friend.satisfaction++;
                 mushroomCount--;
             } else if (mushroomCount <= 0) {
-                alert('There are no more mushrooms. Go hunting!')
+                alert('There are no more mushrooms. Go hunting!');
             } 
             displayFriends();
             displayMushrooms();
