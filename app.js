@@ -47,14 +47,14 @@ addFriendButton.addEventListener('click', () => {
     const friend = {
         name: friendName,
         satisfaction: 1
-    }
+    };
 
     if (friendName === '') {
-        friend.name = `Friend ${Math.floor(Math.random() * 1000)}`
-    };
+        friend.name = `Friend ${Math.floor(Math.random() * 1000)}`;
+    }
     
-    friendData.push(friend)
-    console.log(friend);
+    friendData.push(friend);
+   
     
     friendName = '';
     
@@ -76,7 +76,7 @@ function displayFriends() {
             }
             displayFriends();
             displayMushrooms();
-            console.log(mushroomCount, friend.satisfaction);
+            
         });
 
         friendsEl.append(renderedFriend);
