@@ -10,6 +10,7 @@ const addFriendButton = document.getElementById('add-friend-button');
 
 let mushroomCount = 3;
 
+
 const friendData = [
     {
         name: 'Erich',
@@ -73,7 +74,9 @@ function displayFriends() {
             if (friend.satisfaction < 3 && mushroomCount > 0) {
                 friend.satisfaction++;
                 mushroomCount--;
-            }
+            } else if (mushroomCount <= 0) {
+                alert('There are no more mushrooms. Go hunting!')
+            } 
             displayFriends();
             displayMushrooms();
             
